@@ -5,5 +5,5 @@ node_modules/
 .jpg
 .gif
 dist/
-src/images/
+src/assets/images/
 npm-debug.log

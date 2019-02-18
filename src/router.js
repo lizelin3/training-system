@@ -31,9 +31,79 @@ export default new Router({
       component: () => import(/* webpackChunkName: "items" */ './views/Items.vue')
     },
     {
+      path: '/attend',
+      name: 'attend',
+      component: () => import(/* webpackChunkName: "attend" */ './views/Attend.vue')
+    },
+    {
+      path: '/book/attends/:id',
+      name: 'attends',
+      component: () => import(/* webpackChunkName: "attends" */ './views/Attends.vue')
+    },
+    {
       path: '/book/item/20181013',
       name: 'item20181013',
       component: () => import(/* webpackChunkName: "item20181013" */ './views/item/20181013.vue')
+    },
+    {
+      path: '/book/item/20181027',
+      name: 'item20181027',
+      component: () => import(/* webpackChunkName: "item20181027" */ './views/item/20181027.vue')
+    },
+    {
+      path: '/book/item/20181110',
+      name: 'item20181110',
+      component: () => import(/* webpackChunkName: "item20181110" */ './views/item/20181110.vue')
+    },
+    {
+      path: '/book/item/20181124',
+      name: 'item20181124',
+      component: () => import(/* webpackChunkName: "item20181124" */ './views/item/20181124.vue')
+    },
+    {
+      path: '/book/item/20181201',
+      name: 'item20181201',
+      component: () => import(/* webpackChunkName: "item20181201" */ './views/item/20181201.vue')
+    },
+    {
+      path: '/book/item/20181208',
+      name: 'item20181208',
+      component: () => import(/* webpackChunkName: "item20181208" */ './views/item/20181208.vue')
+    },
+    {
+      path: '/book/attend/20181222',
+      name: 'attend20181222',
+      component: () => import(/* webpackChunkName: "attend20181222" */ './views/attend/20181222.vue')
+    },
+    {
+      path: '/book/attend/20181208',
+      name: 'attend20181208',
+      component: () => import(/* webpackChunkName: "attend20181208" */ './views/attend/20181208.vue')
+    },
+    {
+      path: '/book/attend/20181201',
+      name: 'attend20181201',
+      component: () => import(/* webpackChunkName: "attend20181201" */ './views/attend/20181201.vue')
+    },
+    {
+      path: '/book/attend/20181124',
+      name: 'attend20181124',
+      component: () => import(/* webpackChunkName: "attend20181124" */ './views/attend/20181124.vue')
+    },
+    {
+      path: '/book/attend/20181110',
+      name: 'attend20181110',
+      component: () => import(/* webpackChunkName: "attend20181110" */ './views/attend/20181110.vue')
+    },
+    {
+      path: '/book/attend/20181027',
+      name: 'attend20181027',
+      component: () => import(/* webpackChunkName: "attend20181027" */ './views/attend/20181027.vue')
+    },
+    {
+      path: '/book/attend/20181013',
+      name: 'attend20181013',
+      component: () => import(/* webpackChunkName: "attend20181013" */ './views/attend/20181013.vue')
     },
     {
       path: '*',
