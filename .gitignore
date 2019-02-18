@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+.png
+.PNG
+.jpg
+.gif
+dist/
+src/images/
+npm-debug.log
