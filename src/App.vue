@@ -134,11 +134,14 @@
   </div>
 </template>
 
-<script>
-import "jquery";
+<script lang="ts">
+import Vue from "vue";
+import Component from "vue-class-component";
+import $ from "jquery";
 
-export default {
-  mounted: function() {
+@Component({})
+export default class App extends Vue {
+  mounted() {
     $('.navbar-sidenav [data-toggle="tooltip"]').tooltip({
       template:
         '<div class="tooltip navbar-sidenav-tooltip" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
@@ -161,14 +164,14 @@ export default {
     $(
       "body.fixed-nav .navbar-sidenav, body.fixed-nav .sidenav-toggler, body.fixed-nav .navbar-collapse"
     ).on("mousewheel DOMMouseScroll", function(e) {
-      var e0 = e.originalEvent,
+      let e0 = e.originalEvent,
         delta = e0.wheelDelta || -e0.detail;
       this.scrollTop += (delta < 0 ? 1 : -1) * 30;
       e.preventDefault();
     });
     // Scroll to top button appear
     $(document).scroll(function() {
-      var scrollDistance = $(this).scrollTop();
+      let scrollDistance = $(this).scrollTop();
       if (scrollDistance > 100) {
         $(".scroll-to-top").fadeIn();
       } else {
@@ -179,7 +182,7 @@ export default {
     $('[data-toggle="tooltip"]').tooltip();
     // Smooth scrolling using jQuery easing
     $(document).on("click", "a.scroll-to-top", function(event) {
-      var $anchor = $(this);
+      let $anchor = $(this);
       $("html, body")
         .stop()
         .animate(
@@ -195,5 +198,5 @@ export default {
     $(".navbar-brand").text("实训系统");
     $("#footer").text(new Date().getFullYear() + " ISY Team");
   }
-};
+}
 </script>

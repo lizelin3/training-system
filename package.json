@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.3.3",
+    "@types/node": "^11.9.4",
     "babel-loader": "^8.0.5",
     "babel-plugin-dynamic-import-webpack": "^1.1.0",
     "clean-webpack-plugin": "^1.0.1",
@@ -23,6 +24,11 @@
     "jquery": "^3.3.1",
     "jquery.easing": "^1.4.1",
     "style-loader": "^0.23.1",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.12.1",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.3.3",
     "vue-loader": "^15.6.2",
     "vue-template-compiler": "^2.6.6",
     "webpack": "^4.29.4",
@@ -33,6 +39,8 @@
   "dependencies": {
     "lodash": "^4.17.11",
     "vue": "^2.6.6",
+    "vue-class-component": "^7.0.1",
+    "vue-property-decorator": "^7.3.0",
     "vue-router": "^3.0.2"
   }
 }
